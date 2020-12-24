@@ -24,6 +24,7 @@ function App() {
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
+              <Route path="*" component={() => '404 Not Found'} />
             </Switch>
           </AuthProvider>
         </Router>
